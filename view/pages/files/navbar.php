@@ -44,9 +44,9 @@
                                     <a href="single.html" class="dropdown-item">Blog Detail</a>
                                 </div>
                             </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            <a href="contact" class="nav-item nav-link">Contact</a>
                         </div>
-                        <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="">Join Now</a>
+                        <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="http://localhost/e-courses/view\pages\users\pages\examples\login">Join Now</a>
                     </div>
                 </nav>
             </div>
