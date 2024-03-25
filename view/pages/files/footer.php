@@ -6,7 +6,7 @@
                     <div class="col-md-6 mb-5">
                         <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Get In Touch</h5>
                         <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i><a href="tel:+25675586477"> +256 7 558 6477</a></p>
                         <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
                         <div class="d-flex justify-content-start mt-4">
                             <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fa-brands fa-x-twitter"></i></a>
@@ -35,7 +35,7 @@
                     <div class="input-group">
                         <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Your Email Address">
                         <div class="input-group-append">
-                            <button class="btn btn-primary px-4">Sign Up</button>
+                            <button class="btn btn-primary px-4">Subscribe</button>
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
     <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
         <div class="row">
             <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0 text-white">&copy; <script>document.write(new Date().getFullYear()); </script> <a href="#">emmaksst.net</a>. All Rights Reserved. Designed by <a href="https://kizo19.github.io">Joseph KIZO</a>
+                <p class="m-0 text-white">&copy; <script>document.write(new Date().getFullYear()); </script> <a href="./">emmaksst.net</a>. All Rights Reserved. Designed by <a href="https://kizo19.github.io">Joseph KIZO</a>
                 </p>
             </div>
             <div class="col-lg-6 text-center text-md-right">

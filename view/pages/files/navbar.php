@@ -1,4 +1,8 @@
+<?php
 
+session_start();
+
+?>
     <div class="container-fluid">
         <div class="row border-top px-xl-5">
             <div class="col-lg-3 d-none d-lg-block">
@@ -25,7 +29,7 @@
             </div>
             <div class="col-lg-9">
                 <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
-                    <a href="" class="text-decoration-none d-block d-lg-none">
+                    <a href="./" class="text-decoration-none d-block d-lg-none">
                         <h1 class="m-0"><span class="text-primary">E</span>COURSES</h1>
                     </a>
                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -33,10 +37,10 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav py-0">
-                            <a href="index.html" class="nav-item nav-link active">Home</a>
-                            <a href="about.html" class="nav-item nav-link">About</a>
-                            <a href="course.html" class="nav-item nav-link">Courses</a>
-                            <a href="teacher.html" class="nav-item nav-link">Tutors</a>
+                            <a href="home" class="nav-item nav-link active" id="home">Home</a>
+                            <a href="about" class="nav-item nav-link" id="about">About</a>
+                            <a href="course.html" class="nav-item nav-link" id="courses">Courses</a>
+                            <a href="teacher.html" class="nav-item nav-link" id="tutors">Tutors</a>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Blog</a>
                                 <div class="dropdown-menu rounded-0 m-0">
@@ -46,9 +50,42 @@
                             </div>
                             <a href="contact" class="nav-item nav-link">Contact</a>
                         </div>
-                        <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="http://localhost/e-courses/view\pages\users\pages\examples\login">Join Now</a>
+                        <?php
+                        if(isset($_SESSION['rollnumber'])){
+                           echo' <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="logout">'.$_SESSION['firstname'].' '.$_SESSION['lastname'].'</a>';
+                        }else{
+                            echo' <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="login">Join Now</a>';
+                        }
+                       
+                        ?>
                     </div>
                 </nav>
             </div>
         </div>
     </div>
+
+    <?php
+        if(!isset($_GET['url']) || $_GET['url']=='home'){
+
+        }else{
+            echo '<!-- Header Start -->
+            <div class="container-fluid page-header" style="margin-bottom: 90px;">
+                <div class="container">
+                    <div class="d-flex flex-column justify-content-center" style="min-height: 300px">
+                        <h3 class="display-4 text-white text-uppercase">';
+                                    echo $_GET['url'].'
+                        </h3>
+                        <div class="d-inline-flex text-white">
+                            <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
+                            <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                            <p class="m-0 text-uppercase">';
+                                    echo $_GET['url'].'
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Header End -->';
+        }
+    ?>
+
